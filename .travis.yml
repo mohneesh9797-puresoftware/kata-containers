@@ -40,6 +40,14 @@ jobs:
   include:
   - name: x86_64 test
     os: linux
+  - name: arm64 test
+    os: linux
+    arch: arm64-graviton2
+    dist: focal
+    sudo: required
+    group: edge
+    virt: vm
+    install: skip
   - name: ppc64le test
     os: linux-ppc64le
     install: skip
